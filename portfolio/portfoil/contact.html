@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact | Niserine El Ferighes</title>
+    <link rel="stylesheet" href="contact_styles.css"> 
+    
+</head>
+<body>
+    <div class="page-container">
+        
+        <header class="navbar">
+            <div class="logo-name">
+                <span class="dot yellow-dot"></span>
+                <h1>Niserine El Ferighes</h1>
+            </div>
+            <nav class="nav-links">
+                <a href="cv.html">CV</a>
+                <a href="contact.html" class="nav-active">contact</a>
+            </nav>
+        </header>
+
+        <main class="main-content-layout">
+            
+            <div class="contact-info-left">
+                <h2 class="section-title">Contact</h2>
+                
+                <div class="info-group">
+                    <p class="label-info">Téléphone</p>
+                    <p class="value-info">0778091497 📞</p>
+                </div>
+                
+                <div class="info-group">
+                    <p class="label-info">E-mail</p>
+                    <p class="value-info underline">info@monsite.fr</p>
+                </div>
+                
+                <div class="linkedin-link">
+                    <p>🔗 LinkedIn : <a href="https://linkedin.com/in/niserine" target="_blank">linkedin.com/in/niserine</a></p>
+                </div>
+            </div>
+
+            <div class="contact-form-right">
+                
+                <form action="#" method="POST" class="contact-form">
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="prenom">Prenom</label>
+                            <input type="text" id="prenom" name="prenom">
+                        </div>
+                        <div class="form-group">
+                            <label for="nom">Nom de famille</label>
+                            <input type="text" id="nom" name="nom">
+                        </div>
+                    </div>
+                    
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="email">E-mail *</label>
+                            <input type="email" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="object">object</label>
+                            <input type="text" id="object" name="object">
+                        </div>
+                    </div>
+                    
+                    <div class="form-group full-width">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="6"></textarea>
+                    </div>
+                    
+                    <button type="submit" class="submit-btn orange-cercle">ENVOYER</button>
+
+                </form>
+            </div>
+            
+        </main>
+    </div>
+</body>
+</html>

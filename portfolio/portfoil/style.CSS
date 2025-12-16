@@ -1,0 +1,123 @@
+
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #f7f3f6;
+    margin: 40px;
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.contenu {
+    max-width: 900px;
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    margin-bottom: 50px;
+}
+.image-profil {
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+
+    background-color: transparent; 
+    margin-right: 30px;
+}
+h1 {
+    font-size: 3.5em;
+    font-weight: 700;
+    margin: 0;
+    letter-spacing: -1px;
+}
+h2 {
+    font-size: 1.2em;
+    font-weight: 400;
+    margin: 5px 0 10px 0;
+}
+.description p {
+    font-size: 1.05em;
+    line-height: 1.6;
+    color: #333;
+}
+.description strong {
+    font-weight: 700;
+}
+
+
+.navigation {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+    margin: 50px 0;
+}
+.cercle {
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+.cercle a {
+    color: white;
+    font-size: 1.3em;
+    font-weight: 700;
+    text-decoration: none;
+}
+.orange { background-color: #ff8c00; }
+.red { background-color: #ff3366; }
+.yellow { background-color: #ffcc00; }
+
+
+.contact-info {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    padding-top: 30px;
+  
+}
+.info-bloc {
+    text-align: left;
+}
+.info-bloc .titre {
+    font-size: 1em;
+    font-weight: 700;
+    margin: 0 0 5px 0;
+    color: #000;
+}
+.info-bloc .valeur {
+    font-size: 1em;
+    font-weight: 400;
+    margin: 0;
+    color: #333;
+}
+
+@media (max-width: 600px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+    }
+    .image-profil {
+        margin: 0 0 20px 0;
+    }
+    .navigation {
+        flex-direction: column;
+        align-items: center;
+    }
+    .cercle {
+        margin-bottom: 20px;
+    }
+    .contact-info {
+        flex-direction: column;
+        align-items: center;
+    }
+    .info-bloc {
+        text-align: center;
+        margin-bottom: 20px;
+    }
+}

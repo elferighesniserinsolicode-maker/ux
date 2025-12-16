@@ -1,0 +1,213 @@
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: #ffffff;
+    color: #000;
+    display: flex;
+    justify-content: center;
+}
+
+.cv-page-container {
+    width: 90%;
+    max-width: 1100px;
+    padding: 30px;
+}
+
+
+.cv-navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 25px;
+}
+
+.logo-name {
+    display: flex;
+    align-items: center;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.orange-dot {
+    background-color: orange;
+}
+
+.cv-navbar h1 {
+    font-size: 1.3rem;
+    font-weight: 600;
+}
+
+.nav-links a {
+    text-decoration: none;
+    font-weight: 600;
+    color: black;
+}
+
+.cv-content {
+    display: grid;
+    grid-template-columns: 80px 1fr;
+    gap: 40px;
+    margin-top: 40px;
+}
+
+.sidebar {
+    display: flex;
+    justify-content: center;
+}
+
+.nav-cercle {
+    width: 70px;
+    height: 70px;
+    border-radius: 50%;
+    background-color: orange;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.nav-cercle a {
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+}
+
+
+.section-container {
+    margin-bottom: 50px;
+}
+
+.section-title {
+    font-size: 1.8rem;
+    font-weight: 700;
+}
+
+.section-divider {
+    width: 60px;
+    height: 4px;
+    background-color: orange;
+    margin: 10px 0 25px 0;
+}
+
+
+.experience-item {
+    margin-bottom: 30px;
+}
+
+.role-title {
+    font-size: 1.2rem;
+    font-weight: 600;
+}
+
+.details {
+    font-size: 0.95rem;
+    margin-top: 4px;
+}
+
+.date-period {
+    font-size: 0.9rem;
+    font-weight: 500;
+    margin: 8px 0;
+}
+
+.tasks-list {
+    padding-left: 20px;
+}
+
+.tasks-list li {
+    margin-bottom: 6px;
+    font-size: 0.95rem;
+}
+
+
+.formation-item {
+    display: flex;
+    gap: 15px;
+    margin-bottom: 12px;
+}
+
+.year {
+    font-weight: 700;
+    min-width: 70px;
+}
+
+.etendue {
+    min-width: 90px;
+}
+
+
+.expertise-list ul {
+    padding-left: 20px;
+    margin-bottom: 30px;
+}
+
+.expertise-list li {
+    margin-bottom: 6px;
+}
+
+.section-subtitle {
+    font-size: 1.3rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+}
+
+
+.competences-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.competence-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.skill-bar {
+    width: 10px;
+    height: 25px;
+    border-radius: 5px;
+}
+
+.orange-bar {
+    background-color: orange;
+}
+
+.black-bar {
+    background-color: black;
+}
+
+.skill-text {
+    font-weight: 600;
+}
+
+.skill-details {
+    font-size: 0.85rem;
+    color: #555;
+}
+
+
+@media (max-width: 768px) {
+    .cv-content {
+        grid-template-columns: 1fr;
+    }
+
+    .sidebar {
+        justify-content: flex-start;
+    }
+
+    .competences-grid {
+        grid-template-columns: 1fr;
+    }
+}
